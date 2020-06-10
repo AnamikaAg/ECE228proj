@@ -1,0 +1,151 @@
+%\documentclass[journal,draftclsnofoot,onecolumn,11pt]{IEEEtran}
+\documentclass{article}
+\usepackage{spconf}%,amsmath,graphicx}
+\usepackage{color}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\graphicspath{{./figures/}}
+
+\usepackage[cmex10]{amsmath}
+\usepackage{amssymb, latexsym}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}    % special font for L-operator $\mathscr{L}$
+%\usepackage{hyperref} %\usepackage{subcaption}
+%\usepackage{MnSymbol}
+%\usepackage{bm}
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{soul}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+%\newcommand{\bea}{\begin{eqnarray}}
+%\newcommand{\eea}{\end{eqnarray}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+%\newcommand{\bal}{\begin{align}}
+%\newcommand{\eal}{\end{align}}
+%\renewcommand{\Vec}[1]{\boldsymbol{#1}}
+%\newcommand{\Mat}[1]{\boldsymbol{#1}}
+\renewcommand{\Vec}[1]{\mathbf{#1}}
+\newcommand{\Mat}[1]{\mathbf{#1}}
+\newcommand{\Exp}[1]{\mathrm{e}^{#1}}
+\newcommand{\trace}[1]{\mathop{\mathrm{tr}}\left({#1}\right)}
+\renewcommand{\Re}{\mathop{\mathrm{Re}}}
+\renewcommand{\Im}{\mathop{\mathrm{Im}}}
+\newtheorem{theorem}{Theorem}
+
+%\newcommand{\xabs}{|\Vec{x}|}
+%
+%\newcommand{\cfminsert}[1]{{\color{blue} {#1}}}
+%\newcommand{\cfmcomment}[1]{{\color{red} {#1}}}
+%\newcommand{\cfmreplace}[2]{\color{black}{{\color{black} {#2}}}\color{black}}
+%
+%% \newcommand{\cfmfinalchange}[1]{{\color{magenta}{#1}}}
+%\newcommand{\cfmfinalchange}[1]{{\color{black}{#1}}}
+\newcommand{\A}{\Mat{A}_{\mathcal{M}}}
+\newcommand{\G}{\Mat{\Gamma}_{\mathcal{M}}}
+\renewcommand{\P}{\Mat{P}}
+
+\newcounter{saveeqn}
+\newcommand{\alpheqn}{\stepcounter{equation}%
+\setcounter{saveeqn}{\value{equation}}\setcounter{equation}{0}%
+\renewcommand{\theequation}
+            {\arabic{saveeqn}\alph{equation}}}
+\newcommand{\reseteqn}{\setcounter{equation}{\value{saveeqn}}%
+\renewcommand{\theequation}{\arabic{equation}}}
+
+%\newcommand{\url}[1]{{\tt\footnotesize {#1}}}
+%
+%\newcommand{\Vecgamma}{\Vec{\gamma}\hspace*{-1.3ex}\Vec{\gamma}}
+\newcommand{\Vecgamma}{\Vec{\gamma}\hspace*{-1.3ex}\Vec{\gamma}\hspace*{-1.3ex}\Vec{\gamma}\hspace*{-1.3ex}\Vec{\gamma}\hspace*{-1.3ex}\Vec{\gamma}}
+\newcommand{\mtight}{\setlength{\thickmuskip}{0mu} \setlength{\medmuskip}{0mu} \setlength{\thinmuskip}{0mu}}
+%\newcommand{\mtight}{}
+
+
+
+\title{Feature Extraction of Organelle Networks}
+
+
+% author names and affiliations
+\name{
+Anamika Agrawal$^{\star}$,
+Parikshit Jain $^{\dagger}$, and 
+Ishan Mehta $^+$
+}
+
+\address{$^\star$Department of Physics, University of California San Diego, La Jolla
+\\
+$^\dagger$MAE, University of California San Diego, La Jolla
+\\ $^+$ECE, University of California San Diego, La Jolla
+}
+%\newcommand{\squeeze}{\vspace*{-1ex}}
+%\newcommand{\squeezemore}{\vspace*{-1ex}}
+\newcommand{\squeeze}{\vspace*{-0ex}}
+\newcommand{\squeezemore}{\vspace*{-0ex}}
+\begin{document}
+\maketitle
+%\vspace*{-11mm}
+\begin{abstract}
+
+\end{abstract}
+
+{\keywords U-net, Biology, Image Processing}
+\squeeze
+\section{Introduction}
+\squeeze
+
+\subsection{Biological Background}
+
+
+\squeeze
+\subsection{Related Work}
+
+
+%\squeezemore
+%\subsection{Generator}
+%\label{sec:generator}
+%
+%\squeezemore
+%\subsection{Critic}
+%\label{sec:critic}
+%
+%
+%\squeezemore
+%\subsection{Implementation by real-valued representation}
+%\label{sec:rr}
+
+
+\squeezemore
+\section{Methods}
+\squeeze
+% Overview of iterative method goes here
+\subsection{Preprocessing of Images}
+\subsection{U-net implementation}
+\subsection{Post-Processing and Skeletonization}
+
+
+\squeeze
+\section{Results}
+\label{se:examples}
+\squeeze
+
+
+\section{Conclusion and Future Directions}
+
+
+
+
+\squeeze
+\section{Conclusion}
+\squeeze
+
+\clearpage
+%\newpage
+%\bibliographystyle{unsrt}
+%{\footnotesize
+%\bibliography{ER.bib}
+%}
+
+
+\end{document}
