@@ -39,10 +39,11 @@ Required Packages: tensorflow, numpy, Keras, pickle, matplotlib, sys, data
 
 
 == Input/Output details: ==
-Input details(JPG,TIF,etc.):  	Training dataset .
-				sys.path.append('home/ana057/unet-master/').
+Input details(JPG,TIF,etc.):  	Training dataset (provided upon request, email ana057@ucsd.edu)
+				Test data (008_colorized-RGB.tif) also provided upon request. 
+				Code data.py includes:
 				geneTrainNpy(image_path = "ERdata_Images/", mask_path = "ERdata_Masks/",image_prefix = "Image",mask_prefix = "Mask").
-				Image dimensions:
+				Training/Test Image dimensions:
 				IMG_HEIGHT = 512.
 				IMG_WIDTH = 512.
 				IMG_CHANNELS = 1.
