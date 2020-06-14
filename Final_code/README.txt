@@ -43,7 +43,7 @@ Input details(JPG,TIF,etc.):  	Training dataset (provided upon request, email an
 				Test data (008_colorized-RGB.tif) also provided upon request. 
 				Code data.py includes:
 				geneTrainNpy(image_path = "ERdata_Images/", mask_path = "ERdata_Masks/",image_prefix = "Image",mask_prefix = "Mask").
-				Training/Test Image dimensions:
+				Training/Test data used, Image dimensions:
 				IMG_HEIGHT = 512.
 				IMG_WIDTH = 512.
 				IMG_CHANNELS = 1.
@@ -52,14 +52,14 @@ Output details (.JPG): 		Image after segmentation.(Variable "predict" in the cod
 
 == How the code works ==
 
-1) Build a deep learning model to train the data available at (https://github.com/AnamikaAg/ECE228proj/tree/master/unet-master).
+1) Build a deep learning model to train the data (available upon request)
    model = tf.keras.Model(inputs=[inputs], outputs=[outputs])
    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3), loss='binary_crossentropy', metrics=['accuracy']).
 2) Use the model to predict the outcome of a new image from model.predict
 3) Visualize the error, accuracy, and the output image.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
-			2) Postprocessing of images - uNet-ER-new.ipynb 	
+			2) Postprocessing of images - skel_test.py	
 -------------------------------------------------------------------------------------------------------------------------------------------------
 == Installation details: ==
 
