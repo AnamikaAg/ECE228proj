@@ -1,7 +1,7 @@
 == Description of software ==
 The software uses three seperate codes for preprocessing, deep learning and postprocessing.
 
-1) preprocessing_imageJ.ipynb : Filter out the fluorescence light from the input image of a mitochondria  netwrok.
+1) preprocessing_imageJ.ipynb : Filter out the fluorescence light from the input image of an ER netwrok.
 2) uNet-ER-new.ipynb : Deep learning U-net segmentation of ER-network data.
 3) skel_test.py : Postprocessing of an input image to build a network structure.
 
@@ -14,7 +14,7 @@ Language: Python(Notebook)
 Required Packages: CV2, numpy, matplotlib, PIL.
 
 == Input/Output details ==
-Input details(Any format, .JPG,TIF,etc.):  	A noisy image of mitochondria netwrok with fluorescence light.
+Input details(Any format, .JPG,TIF,etc.):  	A noisy image of an ER network with fluorescence light.
 
 Output details (.JPG): 				Filtered image with a reduction in the fluorescence light that, 
 		       				facilitates better visualization of network present in the cell.
